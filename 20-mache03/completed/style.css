@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-body{
+body {
   color: #5a5a5a;
   font-size: 14px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -8,88 +8,88 @@ body{
   letter-spacing: 0.025em;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
   vertical-align: bottom;
 }
 
-h2{
+h2 {
   margin-bottom: 60px;
-  color: #2B2B2B;
+  color: #2b2b2b;
   font-size: 38px;
   font-weight: bold;
   line-height: 1.2;
   text-align: center;
 }
 
-h2::after{
-  content: "";
+h2::after {
+  content: '';
   display: block;
   width: 100px;
   margin: auto;
   padding-top: 30px;
-  border-bottom: 3px solid #ED145B;
+  border-bottom: 3px solid #ed145b;
 }
 
-h3{
+h3 {
   margin-bottom: 20px;
-  color: #2B2B2B;
+  color: #2b2b2b;
   font-size: 16px;
   font-weight: bold;
   line-height: 1.2;
 }
 
-.inner{
+.inner {
   max-width: 1140px;
   width: 90.625%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.btn{
+.btn {
   display: inline-block;
   position: relative;
   width: 200px;
   margin-top: 60px;
   padding: 15px;
   border-radius: 25px;
-  background-color: #ED145B;
+  background-color: #ed145b;
   color: #fff;
   font-weight: bold;
   line-height: 1;
   text-align: center;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: #5a5a5a;
 }
 
-.btn::after{
-  content: "";
+.btn::after {
+  content: '';
   display: block;
   position: absolute;
   top: -50px;
   left: 75px;
   border: 25px solid transparent;
-  border-bottom-color: #ED145B;
+  border-bottom-color: #ed145b;
 }
 
-.btn:hover::after{
+.btn:hover::after {
   border-bottom-color: #5a5a5a;
 }
 
-.hot{
+.hot {
   position: relative;
 }
 
-.hot::before{
-  content: "HOT";
+.hot::before {
+  content: 'HOT';
   position: absolute;
   top: 0;
   left: 0;
   padding: 10px 20px;
-  background-color: #ED145B;
+  background-color: #ed145b;
   color: #fff;
   font-weight: bold;
   line-height: 1;
@@ -97,7 +97,7 @@ h3{
 }
 
 /* header */
-header{
+header {
   position: fixed;
   top: 0;
   left: 0;
@@ -107,43 +107,43 @@ header{
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-header .inner{
-  display: flex;
+header .inner {
+  display: grid;
+  grid-auto-flow: column;
   justify-content: space-between;
   align-items: center;
 }
 
-header nav{
+header nav {
   display: none;
 }
 
-header ul{
-  display: flex;
+header ul {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  column-gap: 20px;
 }
 
-header li{
-  margin-left: 20px;
-}
-
-header a{
+header a {
   color: #fff;
   font-weight: bold;
 }
 
 header .active,
-header a:hover{
-  color: #ED145B;
+header a:hover {
+  color: #ed145b;
 }
 
 /* footer */
-footer{
+footer {
   padding: 60px 0 160px;
-  background-color: #2B2B2B;
+  background-color: #2b2b2b;
   color: #fff;
 }
 
 /* about */
-.about{
+.about {
   margin-bottom: 120px;
   padding: 220px 0 160px;
   background: url(./images/bg_mainvisual.jpg) no-repeat center/cover;
@@ -151,66 +151,70 @@ footer{
   text-align: center;
 }
 
-.about h2{
+.about h2 {
   color: #fff;
   font-size: 46px;
 }
 
-.about h2 span{
-  color: #ED145B;
+.about h2 span {
+  color: #ed145b;
 }
 
-.about p{
+.about p {
   max-width: 740px;
   margin-left: auto;
   margin-right: auto;
 }
 
 /* updates */
-.updates{
+.updates {
   margin-bottom: 120px;
 }
 
-.updates article{
-  margin-bottom: 60px;
+.posts {
+  display: grid;
+  row-gap: 60px;
+}
+
+.updates article {
   background-color: #f4f4f4;
 }
 
-.updates .content{
+.updates .content {
   padding: 30px;
 }
 
 /* PC(640px) */
-@media (min-width:640px){
-  header{
+@media (min-width: 640px) {
+  header {
     padding: 40px 0;
   }
 
-  header nav{
+  header nav {
     display: block;
   }
 
-  header .menu{
+  header .menu {
     display: none;
   }
 
-  .updates article{
-    display: flex;
-    justify-content: space-between;
+  .updates article {
+    display: grid;
+    grid-template-columns: 500fr 490fr;
+    column-gap: 50px;
     align-items: center;
     padding: 50px;
   }
 
-  .updates article:nth-child(2n){
-    flex-direction: row-reverse;
+  .updates article:nth-child(2n) {
+    grid-template-columns: 490fr 500fr;
   }
 
-  .updates .pic{
-    width: 48.08%;
+  .updates article:nth-child(2n) .pic {
+    order: 2;
   }
 
-  .updates .content{
-    width: 47.12%;
+  .updates .content {
     padding: 0;
   }
 }
