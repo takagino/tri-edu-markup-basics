@@ -11,3 +11,29 @@
 .global a:hover {
     color: #B6EAFE;
 }
+
+
+.advantages h3 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+@media (960px<=width) {}
+
+@media (740px<=width) {
+    .advantages .posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5.26%;
+    }
+
+    .advantages article {
+        display: grid;
+        grid-template-rows: subgrid;
+        grid-row: span 4;
+        /*
+        span: 決まり文句（常に同じ）
+        4：articleの中にある要素の数
+        */
+    }
+}
