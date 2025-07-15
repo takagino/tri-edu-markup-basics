@@ -1,5 +1,27 @@
 @charset "utf-8";
 
+h2 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2::before {
+    content: "";
+    display: block;
+    width: 38px;
+    height: 38px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    background-color: #f00;
+    border-radius: 50%;
+}
+
+.advantages h2::before {
+    background-color: #FFF5DE;
+}
+
 .global a {
     /* transition-property: all; */
     /* transition-duration: 3s;
