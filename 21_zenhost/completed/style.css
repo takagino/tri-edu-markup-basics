@@ -345,28 +345,3 @@ footer h2 {
         text-align: left;
     }
 }
-
-input {
-    all: revert;
-}
-
-form {
-    display: grid;
-    grid-template-columns: 1fr 126px;
-    column-gap: 20px;
-    max-width: 626px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.text {
-    background-color: #f00;
-    border: none;
-    padding: 20px;
-}
-
-.submit {
-    background-color: #ccc;
-    border: none;
-    padding: 20px;
-}
