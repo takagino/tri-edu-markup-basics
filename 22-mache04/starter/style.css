@@ -179,31 +179,6 @@ footer{
   overflow: hidden;
 }
 
-.updates .pic::after{
-  content: "\f002";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 97%;
-  left: 0;
-  z-index: 99;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(237, 20, 91, 0.8);
-  color: #fff;
-  font-size: 45px;
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  transform: skewY(1deg);
-  transition: all 0.3s;
-}
-
-.updates .pic:hover::after{
-  top: 0;
-  transform: skewY(0);
-}
-
 .updates .content{
   padding: 30px;
 }
@@ -226,15 +201,5 @@ footer{
   .updates .posts{
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2.63%;
-  }
-}
-
-@keyframes fuwafuwa {
-  0%{
-    transform: translateY(0);
-  }
-
-  100%{
-    transform: translate(20px, 20px);
   }
 }
