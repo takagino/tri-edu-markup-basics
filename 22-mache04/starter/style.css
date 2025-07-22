@@ -24,6 +24,11 @@ h2 {
   font-weight: bold;
   line-height: 1.2;
   text-align: center;
+  transition: 0.2s;
+}
+
+h2:hover {
+  transform: rotate(20deg);
 }
 
 h2::after {
@@ -87,6 +92,11 @@ h3 {
   line-height: 1;
   text-align: center;
   animation: fuwafuwa 1s infinite alternate;
+  /* transform: translate(100px, 100px) rotate(0deg) scale(1) skewY(10deg); */
+  transform: rotate(-90deg) translate(-100%, 0);
+  transform-origin: top left;
+  /* transform-origin：変形の基準点を変える（上下 左右） */
+  /* translateの値を%にすると、要素の幅 or 高さの何%か */
 }
 
 /* header
@@ -119,14 +129,17 @@ header .inner {
 }
 
 .global a {
+  display: inline-block;
+  /* transform はインラインの要素には効かない */
   color: #fff;
   font-weight: bold;
-  transition: color 0.3s;
+  transition: 0.3s;
 }
 
 .global .active,
 .global a:hover {
   color: #ED145B;
+  transform: scale(1.2);
 }
 
 /* footer
@@ -151,7 +164,6 @@ footer {
 ------------------------- */
 /* about */
 .about {
-  margin-bottom: 120px;
   padding: 220px 0 160px;
   background: url(./images/bg_mainvisual.jpg) no-repeat center/cover;
   color: #fff;
@@ -172,8 +184,24 @@ footer {
 }
 
 /* updates */
-.updates {
-  margin-bottom: 120px;
+.updates {}
+
+.updates .skew::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  transform: skewY(3deg) translateY(-50%);
+}
+
+.updates .skew::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  transform: skewY(3deg) translateY(50%);
 }
 
 .updates .posts {
