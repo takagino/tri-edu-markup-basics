@@ -70,6 +70,22 @@ h3 {
   line-height: 1;
   text-align: center;
   transition: background-color 0.3s;
+  animation-name: fadein;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+  animation-delay: 3s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .btn:hover {
