@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflowの使い所②</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css">
+    <style>
+        .notice {
+            width: 300px;
+            height: 100px;
+            overflow-y: scroll;
+            /* 縦スクロールを表示 */
+            border: 1px solid #666;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+
+        /* スクロールバーのカスタマイズ（Webkit系ブラウザ） */
+        .notice::-webkit-scrollbar {
+            width: 8px;
+            /* スクロールバーの幅 */
+        }
+
+        .notice::-webkit-scrollbar-track {
+            background: #51c9f1;
+            /* トラック部分の背景色 */
+        }
+
+        .notice::-webkit-scrollbar-thumb {
+            background-color: #ea6c6c;
+            /* スクロールバーのつまみ部分 */
+            border-radius: 4px;
+            border: 2px solid #f0f0f0;
+            /* トラックとの間に余白を作る */
+        }
+
+        .notice::-webkit-scrollbar-thumb:hover {
+            background-color: #fcfc63;
+            /* ホバー時の色変更 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="notice">
+        <p>これは長いお知らせの文章です。これは長いお知らせの文章です。これは長いお知らせの文章です。これは長いお知らせの文章です。これは長いお知らせの文章です。これは長いお知らせの文章です。これは長いお知らせの文章です。</p>
+    </div>
+</body>
+
+</html>

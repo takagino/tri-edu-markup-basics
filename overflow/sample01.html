@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflowの使い所①</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css">
+    <style>
+        .wrapper {
+            width: 100%;
+            height: 200px;
+            /* overflow-x: hidden; */
+            /* 横スクロールを防止 */
+            border: 2px solid #333;
+            position: relative;
+        }
+
+        .wide-box {
+            position: absolute;
+            bottom: -20%;
+            right: -10%;
+            /* 故意にはみ出す */
+            width: 200px;
+            height: 100px;
+            background-color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wide-box">横にはみ出たボックス</div>
+    </div>
+</body>
+
+</html>
