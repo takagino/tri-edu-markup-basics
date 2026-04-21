@@ -12,4 +12,15 @@ h2 {
     font-family: 'Times New Roman', Times, serif;
     color: #000000;
     /* #000 */
+    text-align: center;
+}
+
+.copyright {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000;
+    text-align: center;
 }
