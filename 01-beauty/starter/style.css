@@ -36,12 +36,18 @@ p {
     letter-spacing: 0;
     font-family: 'Times New Roman', Times, serif;
     color: #000;
+    text-align: center;
+}
+
+.profile {
+    font-size: 12px;
+    text-align: right;
 }
 
 .copyright {
+    margin: 80px 0;
     font-size: 12px;
     font-weight: bold;
-    text-align: center;
 }
 
 ul {
