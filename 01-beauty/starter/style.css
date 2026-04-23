@@ -44,7 +44,9 @@ li {
     border-bottom: 1px solid #ddd;
     /* solid（直線）, dashed（破線）, dotted（点線）*/
     color: #000;
+    /* colorのディフォルトは#000なので、本来は書かなくても良い */
     font-size: 16px;
+    /* font-sizeのディフォルトは16pxなので、本来は書かなくても良い */
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.5;
     letter-spacing: 0;
