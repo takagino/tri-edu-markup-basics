@@ -21,3 +21,23 @@ a {
     font-size: 14px;
     text-decoration: none;
 }
+
+h3 {
+    padding-bottom: 20px;
+    border-bottom: 3px dashed;
+    margin-top: 0;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.graphics {
+    margin-bottom: 50px;
+    padding: 40px;
+    color: #fff;
+    background-color: #27DEBF;
+}
+
+.development {
+    padding: 40px;
+    background-color: #fff;
+}
