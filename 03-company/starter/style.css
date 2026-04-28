@@ -16,6 +16,10 @@ body {
     margin-right: auto;
 }
 
+dd {
+    margin-left: 0;
+}
+
 a {
     color: #151D41;
     font-size: 14px;
@@ -40,4 +44,14 @@ h3 {
 .development {
     padding: 40px;
     background-color: #fff;
+}
+
+.voice {
+    text-align: center;
+}
+
+.voice dt {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.25;
 }
