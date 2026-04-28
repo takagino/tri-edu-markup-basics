@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    color: #151D41;
+    font-size: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 2;
+    letter-spacing: 0;
+    background-color: #F2F2F2;
+}
